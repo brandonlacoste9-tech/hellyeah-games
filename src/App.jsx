@@ -1,4 +1,5 @@
 import React from 'react';
+import EmpireBar from './components/EmpireBar';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import GameGrid from './components/GameGrid';
@@ -17,6 +18,7 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
+      <EmpireBar />
       <Navbar />
       <main>
         <Routes>
