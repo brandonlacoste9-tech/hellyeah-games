@@ -60,6 +60,14 @@ const Navbar = () => {
           {user && <Link to="/profile" className="nav-link" style={{ color: 'var(--primary-color)', fontWeight: 'bold' }}>Profile</Link>}
           {user && <Link to="/my-library" className="nav-link" style={{ color: 'var(--primary-color)' }}>My Library</Link>}
           <Link to="/about" className="nav-link">{t('nav.about')}</Link>
+          <a
+            href="https://hublife.ca/?from=network&via=hellyeah&utm_source=north_network&utm_medium=cross_app&utm_campaign=hellyeah_home"
+            className="nav-link"
+            style={{ color: 'var(--primary-color)', fontWeight: 700 }}
+            title="North Network home"
+          >
+            ⌂ HubLife
+          </a>
         </div>
 
         <div className="navbar-actions desktop-only">
@@ -122,6 +130,14 @@ const Navbar = () => {
           <a href="https://discord.gg/v33kZn6c" target="_blank" rel="noopener noreferrer" className="mobile-nav-link" style={{ color: '#5865F2', fontWeight: 'bold' }}>Discord Community</a>
           {user && <Link to="/profile" className="mobile-nav-link" style={{ color: 'var(--primary-color)', fontWeight: 'bold' }} onClick={() => setMobileMenuOpen(false)}>Profile</Link>}
           {user && <Link to="/my-library" className="mobile-nav-link" style={{ color: 'var(--primary-color)' }} onClick={() => setMobileMenuOpen(false)}>My Library</Link>}
+          <a
+            href="https://hublife.ca/?from=network&via=hellyeah&utm_source=north_network&utm_medium=cross_app&utm_campaign=hellyeah_home"
+            className="mobile-nav-link"
+            style={{ color: 'var(--primary-color)', fontWeight: 700 }}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            ⌂ HubLife · North Network
+          </a>
           <div className="mobile-nav-link" style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'inherit' }}>
             <Globe size={18} />
             <select 
